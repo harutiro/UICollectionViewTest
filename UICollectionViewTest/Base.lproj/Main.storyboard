@@ -41,6 +41,15 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="gso-47-Q1W"/>
                                 </connections>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="by0-iT-X2l">
+                                <rect key="frame" x="299" y="59" width="94" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="リロード"/>
+                                <connections>
+                                    <action selector="reloadButton" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="Pyb-Xg-haf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -51,6 +60,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="csU-g8-hbi" secondAttribute="trailing" id="yzw-1A-9ci"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="csU-g8-hbi" id="mIk-B1-Egj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
